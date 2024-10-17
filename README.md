@@ -39,8 +39,9 @@
       - Básico - Gratis por un mes.
       - Pro - Ilimitado pago mensual.
     - Carro de compras, asociado a pasarela de pago con Paypal.
-    - y Perfil del usuario.
- Adicionalmente se considera Vite y TailwindCSS, para estilos.
+    - Y perfil del usuario.
+      
+ Adicionalmente se considera en Frontend Vite y TailwindCSS.
 
   ### 3. Conclusiones
  Para la preparación del proyecto de "MedAlert", se analizaron diferentes variables con el fin de hacer un proyecto interesante a nivel comercial y a su vez que su objetivo ayude a la población debido a potenciales errores en los manejor farmacológicos que se presenta en la actualidad. Luego de varias revisiones y diferentes ideas con ejecuciones de pruebas, se llegó a la idea de crear esta forma de alertas de gestión de fármacos y dar la opción de agrupar por listas, de esta forma si en una persona y/o familia están bajo diferentes tratamientos médicos, se pueda llevar un registro ordenado de los fármacos, y generar alertas por tratamientos.
