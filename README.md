@@ -1,4 +1,4 @@
-![Banner]()
+![Banner](./images/Banner_ppal.png)
 # Módulo 7 - Proyecto 7
 ## ¡Bienvenidos al proyecto "Aplicación Web E-Commerce MedAlert"!
 
