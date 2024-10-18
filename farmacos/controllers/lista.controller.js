@@ -4,26 +4,24 @@ const Farmaco = require("../models/farmaco");
 // Crear lista
 const create = async (req, res) => {
     try {
-      const { categoria, farmacos } = req.body;
+      const { user, categoria, farmacos } = req.body;
   
-      // Verifica que los fármacos sean un array de IDs y que el usuario esté autenticado
-      if (!Array.isArray(farmacos)) {
-        return res.status(400).json({ message: 'El campo farmacos debe ser un array de IDs' });
-      }
-  
-      // Crea la nueva lista
-      const nuevaLista = await Lista.create({
-        categoria,
-        farmacos,  // Array de ObjectIds de fármacos
-        user: req.user.id  // Asegúrate de tener el ID del usuario en req.user.id
-      });
-  
-      res.json({ message: 'Lista creada exitosamente', nuevaLista });
-    } catch (error) {
-      console.error('Error creando lista:', error);
-      res.status(500).json({ message: 'Error creando la lista', error });
-    }
-  };
+          // Crea una nueva lista con los datos recibidos
+    const nuevaLista = new Lista({
+      user,
+      farmacos,
+      categoria,
+    });
+
+    // Guarda la lista en la base de datos
+    await nuevaLista.save();
+
+    res.status(201).json(nuevaLista); // Devuelve la lista creada
+  } catch (error) {
+    console.error('Error creando la lista:', error);
+    res.status(500).json({ message: 'Error creando la lista' });
+  }
+};
 
 //Envio de alertas via mail a usuario
 const sendAlert = async (req, res) => {
@@ -88,8 +86,11 @@ const remove = async (req, res) => {
 // Buscar las listas del usuario logueado
 const findAll = async (req, res) => {
     try {
-      const listas = await Lista.find().populate('farmacos');  // Poblar los fármacos con sus detalles
-      res.json({ listas });
+      const listas = await Lista.find({ user: req.user.id })
+        .populate('farmacos', 'name') // Popula los fármacos y solo devuelve el campo 'name'
+        .exec();
+
+      res.status(200).json({ listas });
     } catch (error) {
       console.error('Error obteniendo las listas:', error);
       res.status(500).json({ message: 'Error obteniendo las listas', error });
