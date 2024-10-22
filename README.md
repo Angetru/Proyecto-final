@@ -28,20 +28,65 @@
   - Rutas, desde index para gestionar las rutas de usuario, lista, farmaco y autenticación.
   - Se selecciona como pasarela de pago Paypal para este proyecto.
   - Base Datos utilizada MongoDB (Atlas).
-
-    Para Frontend, se consideró:
+  -  Adicionalmente se considera en Frontend Vite y TailwindCSS.
+  - 
+    A continuación se muestran extractos del proyecto final, desde diferentes elementos:
+    
     - Registro de cuenta.
+      
+      ![img registro](./images/Registro.jpg)
+      
     - Login, para inicio de sesión.
+      
+      ![img login](./images/Login.jpg)
+
+    - Perfil del usuario.
+    
+     ![img perfil](./images/Perfil.jpg)
+    
     - Dashboard para acceso a Fármacos y Tratamientos, en donde:
-      - Desde Fármacos, el usuario podrá registrar los fármacos que necesite, a su vez poder editar o eliminar.
-      - Desde Tratamiento, el usuario podrá crear listas de tratamientos para asociarlos con fármacos y posterior a su creación podrá crear la alerta para recordatorio vía mail.
+      
+      ![img dashboard ppal](./images/Dashboard.jpg)
+      
+    - Desde Fármacos, el usuario podrá registrar los fármacos que necesite, a su vez poder editar o eliminar.
+        
+      ![img farmacos1](./images/Farmacos_1.jpg)
+
+      ![img farmacos2](./images/Farmacos_2.jpg)
+      
+      ![img farmacos3](./images/Farmacos_3.jpg)
+
+     - Desde Tratamiento, el usuario podrá crear listas de tratamientos para asociarlos con fármacos y posterior a su creación podrá crear la alerta para recordatorio vía mail.
+      
+      ![img tratamiento1](./images/Tratamiento1.jpg)
+      
+      ![img tratamiento2](./images/Tratamiento2.jpg)
+            
     - Servicios:
       - Básico - Gratis por un mes.
       - Pro - Ilimitado pago mensual.
-    - Carro de compras, asociado a pasarela de pago con Paypal.
-    - Y perfil del usuario.
       
- Adicionalmente se considera en Frontend Vite y TailwindCSS.
+      ![img servicios](./images/Servcios.jpg)
+      
+    - Y Carro de compras, asociado a pasarela de pago con Paypal.
+
+      ![img carro](./images/Carro.jpg)
+
+      Y por último la estructura y ejemplos de MongoDB:
+
+    - Usuarios:
+
+      ![img usuarios](./images/usersmongo.jpg)
+
+     - Fármacos:
+
+      ![img usuarios](./images/farmacosmongo.jpg)
+    
+     - Listas:
+
+      ![img usuarios](./images/listasmongo.jpg)        
+      
+      
 
   ### 3. Conclusiones
  Para la preparación del proyecto de "MedAlert", se analizaron diferentes variables con el fin de hacer un proyecto interesante a nivel comercial y a su vez que su objetivo ayude a la población debido a potenciales errores en los manejor farmacológicos que se presenta en la actualidad. Luego de varias revisiones y diferentes ideas con ejecuciones de pruebas, se llegó a la idea de crear esta forma de alertas de gestión de fármacos y dar la opción de agrupar por listas, de esta forma si en una persona y/o familia están bajo diferentes tratamientos médicos, se pueda llevar un registro ordenado de los fármacos, y generar alertas por tratamientos.
