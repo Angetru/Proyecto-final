@@ -70,7 +70,7 @@
       - Básico - Gratis por un mes.
       - Pro - Ilimitado pago mensual.
       
-      ![img servicios](./images/Servcios.jpg)
+      ![img servicios](./images/Servicios.jpg)
       
     - Y Carro de compras, asociado a pasarela de pago con Paypal.
 
