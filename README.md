@@ -75,6 +75,8 @@
     - Y Carro de compras, asociado a pasarela de pago con Paypal.
 
       ![img carro](./images/Carro.jpg)
+   
+      ![img carro](./images/Pagopaypal.jpg)
       
 
       Y por último la estructura y ejemplos de MongoDB:
