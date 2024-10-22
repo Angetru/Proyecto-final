@@ -30,7 +30,11 @@
   - Base Datos utilizada MongoDB (Atlas).
   -  Adicionalmente se considera en Frontend Vite y TailwindCSS.
   - 
-    A continuación se muestran extractos del proyecto final, desde diferentes elementos:
+    A continuación se muestran extractos del proyecto final, desde diferentes elementos/componentes:
+
+     - Home.
+      
+      ![img registro](./images/Home.jpg)
     
     - Registro de cuenta.
       
@@ -71,6 +75,7 @@
     - Y Carro de compras, asociado a pasarela de pago con Paypal.
 
       ![img carro](./images/Carro.jpg)
+      
 
       Y por último la estructura y ejemplos de MongoDB:
 
@@ -86,6 +91,7 @@
 
       ![img usuarios](./images/listasmongo.jpg)        
       
+
       
 
   ### 3. Conclusiones
